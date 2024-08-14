@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csuser/CPSC223/hw2-colleenlemak11/hw2_perf.cpp
+iostream
+-
+iomanip
+-
+chrono
+-
+functional
+-
+list
+-
+util.h
+/home/csuser/CPSC223/hw2-colleenlemak11/util.h
+linkedseq.h
+/home/csuser/CPSC223/hw2-colleenlemak11/linkedseq.h
+
+/home/csuser/CPSC223/hw2-colleenlemak11/linkedseq.h
+stdexcept
+-
+ostream
+-
+sequence.h
+/home/csuser/CPSC223/hw2-colleenlemak11/sequence.h
+
+/home/csuser/CPSC223/hw2-colleenlemak11/sequence.h
+
+/home/csuser/CPSC223/hw2-colleenlemak11/util.h
+

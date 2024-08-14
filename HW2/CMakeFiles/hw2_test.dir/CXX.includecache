@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csuser/CPSC223/hw2-colleenlemak11/hw2_test.cpp
+iostream
+-
+string
+-
+gtest/gtest.h
+-
+sequence.h
+/home/csuser/CPSC223/hw2-colleenlemak11/sequence.h
+linkedseq.h
+/home/csuser/CPSC223/hw2-colleenlemak11/linkedseq.h
+
+/home/csuser/CPSC223/hw2-colleenlemak11/linkedseq.h
+stdexcept
+-
+ostream
+-
+sequence.h
+/home/csuser/CPSC223/hw2-colleenlemak11/sequence.h
+
+/home/csuser/CPSC223/hw2-colleenlemak11/sequence.h
+

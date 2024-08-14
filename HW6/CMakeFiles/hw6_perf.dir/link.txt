@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw6_perf.dir/hw6_perf.cpp.o CMakeFiles/hw6_perf.dir/util.cpp.o  -o hw6_perf 

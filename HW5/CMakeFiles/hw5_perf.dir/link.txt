@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw5_perf.dir/hw5_perf.cpp.o CMakeFiles/hw5_perf.dir/util.cpp.o  -o hw5_perf 

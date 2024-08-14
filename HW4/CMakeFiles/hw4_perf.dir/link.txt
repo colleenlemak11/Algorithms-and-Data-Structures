@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw4_perf.dir/hw4_perf.cpp.o CMakeFiles/hw4_perf.dir/util.cpp.o  -o hw4_perf 

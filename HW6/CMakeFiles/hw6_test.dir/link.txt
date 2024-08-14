@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw6_test.dir/hw6_test.cpp.o  -o hw6_test  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

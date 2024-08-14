@@ -1,0 +1,183 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\newcommand{\spc}{\vspace{12pt}}
+
+\def \SCORECOMPLETE {20 / 30}
+\def \SCORETESTS    {0 / 0}
+\def \SCOREFORMAT   {5 / 5}
+\def \SCOREANALYSIS {5 / 5}
+\def \SCORETOTAL    {30 / 40}
+\begin{document}
+\pagestyle{empty}
+\date{}
+
+\noindent\textbf{Grade Sheet} \hfill \emph{CPSC 223: Data Structures}
+
+\noindent\hrulefill
+
+\spc
+\subsection*{Name: {\em Colleen Lemak}}
+\subsection*{Assignment: 2}
+
+\spc\spc
+
+\subsection*{Submission and Compilation}
+\begin{itemize}
+\item Builds and Compiles Successfully
+\end{itemize}
+\subsection*{Complete \& Correct:~ {\tt \SCORECOMPLETE}}
+\begin{itemize}
+\item Unit Test Results:
+\begin{scriptsize}
+\begin{quote}
+\begin{verbatim}
+==205181== Memcheck, a memory error detector
+==205181== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==205181== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==205181== Command: ./hw2_test
+==205181== 
+[==========] Running 19 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 19 tests from BasicLinkedSeqTests
+[ RUN      ] BasicLinkedSeqTests.EmptyListSize
+[       OK ] BasicLinkedSeqTests.EmptyListSize (7 ms)
+[ RUN      ] BasicLinkedSeqTests.EmptyListContains
+[       OK ] BasicLinkedSeqTests.EmptyListContains (1 ms)
+[ RUN      ] BasicLinkedSeqTests.EmptyListMemberAccess
+[       OK ] BasicLinkedSeqTests.EmptyListMemberAccess (27 ms)
+[ RUN      ] BasicLinkedSeqTests.AddAndCheckSize
+[       OK ] BasicLinkedSeqTests.AddAndCheckSize (7 ms)
+[ RUN      ] BasicLinkedSeqTests.AddAndCheckContains
+[       OK ] BasicLinkedSeqTests.AddAndCheckContains (6 ms)
+[ RUN      ] BasicLinkedSeqTests.OutOfBoundsInsertIndexes
+[       OK ] BasicLinkedSeqTests.OutOfBoundsInsertIndexes (4 ms)
+[ RUN      ] BasicLinkedSeqTests.EraseAndCheckSize
+[       OK ] BasicLinkedSeqTests.EraseAndCheckSize (11 ms)
+[ RUN      ] BasicLinkedSeqTests.EraseAndCheckContains
+[       OK ] BasicLinkedSeqTests.EraseAndCheckContains (9 ms)
+[ RUN      ] BasicLinkedSeqTests.OutOfBoundsEraseIndexes
+[       OK ] BasicLinkedSeqTests.OutOfBoundsEraseIndexes (4 ms)
+[ RUN      ] BasicLinkedSeqTests.DestructorNoThrowChecksWithNew
+[       OK ] BasicLinkedSeqTests.DestructorNoThrowChecksWithNew (2 ms)
+[ RUN      ] BasicLinkedSeqTests.CopyConstructorChecks
+[       OK ] BasicLinkedSeqTests.CopyConstructorChecks (7 ms)
+[ RUN      ] BasicLinkedSeqTests.MoveConstructorChecks
+[       OK ] BasicLinkedSeqTests.MoveConstructorChecks (7 ms)
+[ RUN      ] BasicLinkedSeqTests.CopyAssignmentOpChecks
+[       OK ] BasicLinkedSeqTests.CopyAssignmentOpChecks (9 ms)
+[ RUN      ] BasicLinkedSeqTests.CheckRValueAccess
+[       OK ] BasicLinkedSeqTests.CheckRValueAccess (3 ms)
+[ RUN      ] BasicLinkedSeqTests.CheckLValueAccess
+[       OK ] BasicLinkedSeqTests.CheckLValueAccess (3 ms)
+[ RUN      ] BasicLinkedSeqTests.CheckConstRValueAccess
+[       OK ] BasicLinkedSeqTests.CheckConstRValueAccess (3 ms)
+[ RUN      ] BasicLinkedSeqTests.OutOfBoundsLValueAccess
+[       OK ] BasicLinkedSeqTests.OutOfBoundsLValueAccess (2 ms)
+[ RUN      ] BasicLinkedSeqTests.OutOfBoundsRValueAccess
+[       OK ] BasicLinkedSeqTests.OutOfBoundsRValueAccess (3 ms)
+[ RUN      ] BasicLinkedSeqTests.StringInsertionChecks
+[       OK ] BasicLinkedSeqTests.StringInsertionChecks (10 ms)
+[----------] 19 tests from BasicLinkedSeqTests (130 ms total)
+
+[----------] Global test environment tear-down
+[==========] 19 tests from 1 test suite ran. (156 ms total)
+[  PASSED  ] 19 tests.
+==205181== 
+==205181== HEAP SUMMARY:
+==205181==     in use at exit: 32 bytes in 2 blocks
+==205181==   total heap usage: 648 allocs, 646 frees, 145,661 bytes allocated
+==205181== 
+==205181== LEAK SUMMARY:
+==205181==    definitely lost: 16 bytes in 1 blocks
+==205181==    indirectly lost: 16 bytes in 1 blocks
+==205181==      possibly lost: 0 bytes in 0 blocks
+==205181==    still reachable: 0 bytes in 0 blocks
+==205181==         suppressed: 0 bytes in 0 blocks
+==205181== Rerun with --leak-check=full to see details of leaked memory
+==205181== 
+==205181== For lists of detected and suppressed errors, rerun with: -s
+==205181== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+\end{verbatim}
+\end{quote}
+\end{scriptsize}
+\end{itemize}
+
+\begin{itemize}
+\item Performance Test Results:
+\begin{scriptsize}
+\begin{quote}
+\begin{verbatim}
+# All times in milliseconds (msec)
+# Column 1 = input data size
+# Column 2 = avg time linked-list insert front
+# Column 3 = avg time cpp-list insert front
+# Column 4 = avg time linked-list insert middle
+# Column 5 = avg time cpp-list insert middle
+# Column 6 = avg time linked-list insert end
+# Column 7 = avg time cpp-list insert end
+# Column 8 = avg time linked-list update front
+# Column 9 = avg time cpp-list update front
+# Column 10 = avg time linked-list update middle
+# Column 11 = avg time cpp-list update middle
+# Column 12 = avg time linked-list update end
+# Column 13 = avg time cpp-list update end
+# Column 14 = avg time linked-list erase front
+# Column 15 = avg time cpp-list erase front
+# Column 16 = avg time linked-list erase middle
+# Column 17 = avg time cpp-list erase middle
+# Column 18 = avg time linked-list erase end
+# Column 19 = avg time cpp-list erase end
+0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+10000 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+20000 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+30000 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+40000 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+50000 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+60000 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+70000 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.11 0.22 0.00 0.00 0.00 0.00 0.00 0.67 0.00
+80000 0.00 0.00 0.11 0.11 0.00 0.00 0.00 0.00 0.00 1.00 1.22 0.00 0.00 0.00 0.00 0.11 1.00 0.00
+90000 0.00 0.00 0.11 0.22 0.00 0.00 0.00 0.00 0.11 1.33 2.00 0.00 0.00 0.00 0.11 0.33 2.78 0.00
+100000 0.00 0.00 1.11 1.11 0.00 0.00 0.00 0.00 1.00 2.22 3.00 0.00 0.00 0.00 1.11 1.11 3.56 0.00
+110000 0.00 0.00 1.11 1.56 0.00 0.00 0.00 0.00 2.00 3.22 4.67 0.00 0.00 0.00 1.11 1.33 4.89 0.00
+120000 0.00 0.00 2.00 2.11 0.00 0.00 0.00 0.00 2.11 4.22 7.00 0.00 0.00 0.00 2.11 2.22 6.89 0.00
+130000 0.00 0.00 2.33 3.11 0.00 0.00 0.00 0.00 2.22 6.22 7.78 0.00 0.00 0.00 2.89 3.11 7.44 0.00
+140000 0.00 0.00 3.11 3.11 0.00 0.00 0.00 0.00 3.44 7.67 9.00 0.00 0.00 0.00 3.22 3.56 9.00 0.00
+150000 0.00 0.00 3.11 3.89 0.00 0.00 0.00 0.00 4.22 8.22 9.67 0.00 0.00 0.00 4.11 4.11 9.56 0.00
+160000 0.00 0.00 4.11 5.00 0.00 0.00 0.00 0.00 4.22 10.44 11.22 0.00 0.00 0.00 5.00 4.44 11.11 0.00
+170000 0.00 0.00 5.11 5.33 0.00 0.00 0.00 0.00 5.44 11.89 12.33 0.00 0.00 0.00 5.11 5.67 12.22 0.00
+180000 0.00 0.00 5.44 6.44 0.00 0.00 0.00 0.00 6.67 13.56 13.00 0.00 0.00 0.00 6.11 6.11 13.11 0.00
+190000 0.00 0.00 6.33 7.00 0.00 0.00 0.00 0.00 6.56 14.11 14.67 0.00 0.00 0.00 6.56 7.11 14.33 0.00
+200000 0.00 0.00 6.89 7.56 0.00 0.00 0.00 0.00 7.33 16.22 16.67 0.00 0.00 0.00 7.44 7.56 16.78 0.00
+\end{verbatim}
+\end{quote}
+\end{scriptsize}
+\end{itemize}
+
+\subsection*{Student-Defined Test Cases:~ {\tt \SCORETESTS}}
+
+\subsection*{Format and Comments:~ {\tt \SCOREFORMAT}}
+
+\subsection*{Discussion and Analysis:~ {\tt \SCOREANALYSIS}}
+\begin{itemize}
+\item copied two erase graphs
+\end{itemize}
+\spc
+
+\noindent\hrulefill
+\vspace{-12pt}
+\subsection*{Total Score:~ {\tt \SCORETOTAL}}
+\begin{itemize}
+\item (-3) valgrind reports a memory leak
+\item (-2) need to empty current object even if rhs is empty in copy
+  assignment
+\item (-2) copy assignment doesn't properly copy the linked list
+  (never sets tail's next to nullptr, doesn't add a value to last
+  node, etc)
+\item (-3) operator[] needs to check for special tail case (see
+  instructions)
+\end{itemize}
+
+\vspace{-12pt}
+\noindent\hrulefill
+\end{document}

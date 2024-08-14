@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csuser/CPSC223/hw3-colleenlemak11/arrayseq.h
+stdexcept
+-
+ostream
+-
+sequence.h
+/home/csuser/CPSC223/hw3-colleenlemak11/sequence.h
+
+/home/csuser/CPSC223/hw3-colleenlemak11/hw3_perf.cpp
+iostream
+-
+iomanip
+-
+chrono
+-
+cmath
+-
+functional
+-
+vector
+-
+arrayseq.h
+/home/csuser/CPSC223/hw3-colleenlemak11/arrayseq.h
+cassert
+-
+
+/home/csuser/CPSC223/hw3-colleenlemak11/sequence.h
+

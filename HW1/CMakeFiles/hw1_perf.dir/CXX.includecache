@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/csuser/CPSC223/hw1-colleenlemak11/simple_sorts.cpp
+iostream
+-
+simple_sorts.h
+/home/csuser/CPSC223/hw1-colleenlemak11/simple_sorts.h
+
+/home/csuser/CPSC223/hw1-colleenlemak11/simple_sorts.h
+

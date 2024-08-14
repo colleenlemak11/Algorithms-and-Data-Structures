@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw1_test.dir/hw1_test.cpp.o CMakeFiles/hw1_test.dir/simple_sorts.cpp.o  -o hw1_test  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

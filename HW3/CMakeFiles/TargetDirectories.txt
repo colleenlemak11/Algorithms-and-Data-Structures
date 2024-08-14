@@ -1,0 +1,4 @@
+/home/csuser/CPSC223/hw3-colleenlemak11/CMakeFiles/rebuild_cache.dir
+/home/csuser/CPSC223/hw3-colleenlemak11/CMakeFiles/edit_cache.dir
+/home/csuser/CPSC223/hw3-colleenlemak11/CMakeFiles/hw3_perf.dir
+/home/csuser/CPSC223/hw3-colleenlemak11/CMakeFiles/hw3_test.dir

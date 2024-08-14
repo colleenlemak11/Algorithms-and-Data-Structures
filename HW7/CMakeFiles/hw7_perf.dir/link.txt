@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw7_perf.dir/hw7_perf.cpp.o CMakeFiles/hw7_perf.dir/util.cpp.o  -o hw7_perf 

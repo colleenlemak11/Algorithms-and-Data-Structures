@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw7_test.dir/hw7_test.cpp.o  -o hw7_test  -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

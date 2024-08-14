@@ -1,0 +1,4 @@
+/home/csuser/CPSC223/hw4-colleenlemak11/CMakeFiles/rebuild_cache.dir
+/home/csuser/CPSC223/hw4-colleenlemak11/CMakeFiles/edit_cache.dir
+/home/csuser/CPSC223/hw4-colleenlemak11/CMakeFiles/hw4_perf.dir
+/home/csuser/CPSC223/hw4-colleenlemak11/CMakeFiles/hw4_test.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw1_perf.dir/hw1_perf.cpp.o CMakeFiles/hw1_perf.dir/util.cpp.o CMakeFiles/hw1_perf.dir/simple_sorts.cpp.o  -o hw1_perf 

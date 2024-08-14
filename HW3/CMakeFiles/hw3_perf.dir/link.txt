@@ -1,0 +1,1 @@
+/usr/bin/c++  -O0 -g  -rdynamic CMakeFiles/hw3_perf.dir/hw3_perf.cpp.o  -o hw3_perf 
