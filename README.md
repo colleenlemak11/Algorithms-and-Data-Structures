@@ -1,4 +1,4 @@
-# Welcome to MyCPSC223: Algorithms & Abstract Data Structures!
+# Welcome to Algorithms & Abstract Data Structures!
 
 ## About
 - Language(s): C++
